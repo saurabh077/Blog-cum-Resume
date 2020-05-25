@@ -1,0 +1,28 @@
+
+<%- include ('partials/header') %>
+<div class="jumbotron" style="margin-top: 50px;">
+    <h1 style="text-align: center;">Extra-Curricular</h1>
+</div>
+
+<div class="container">
+    <% extras.forEach(function(extra){%>
+        <div class="card text-center" style="margin-top: 5px;margin-bottom:5px">
+            <div class="card-header"> 
+            </div>
+            <div class="card-body">
+            <h5 class="card-title"><%=extra.extra%></h5>
+            <p class="card-text"></p>
+            </div>
+        </div>
+    <%});%>
+</div>
+
+
+
+
+
+
+
+
+
+<%- include ('partials/footer') %>

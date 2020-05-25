@@ -1,0 +1,29 @@
+
+<%- include ('partials/header') %>
+<div class="jumbotron" style="margin-top: 50px;">
+    <h1 style="text-align: center;">Achievements</h1>
+</div>
+
+<div class="container">
+    <% acheivements.forEach(function(achievement){%>
+        <div class="card text-center" style="margin-top: 5px; margin-bottom:5px">
+            <div class="card-header"> 
+            </div>
+            <div class="card-body">
+            <h5 class="card-title"><%=achievement.ach%></h5>
+            <p class="card-text"></p>
+            </div>
+        </div>
+    <%});%>
+</div>
+    
+
+
+
+
+
+
+
+
+
+<%- include ('partials/footer') %>

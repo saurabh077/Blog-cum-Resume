@@ -1,0 +1,40 @@
+
+<%- include ('partials/header') %>
+<div class="jumbotron" style="margin-top: 50px;">
+    <h1 style="text-align: center; ">Projects</h1>
+</div>
+
+<div class="container">
+  <% projects.forEach(function(project){%>
+    <div class="card text-center" style="margin-top: 5px; margin-bottom:5px">
+        <div class="card-header">
+            Project <%=project.no%> 
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"><%=project.title%></h5>
+          <p class="card-text"><%=project.desc%></p>
+          <a href="#" class="btn btn-primary">View Project</a>
+        </div>
+        <div class="card-footer text-muted">
+          <%=project.period%>
+        </div>
+    </div>
+  <%});%>
+</div>
+        
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include ('partials/footer') %>

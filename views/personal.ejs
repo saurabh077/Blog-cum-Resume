@@ -1,0 +1,73 @@
+<%- include ('partials/header') %>
+<div class="jumbotron" style="margin-top: 50px;">
+    <h1 style="text-align: center; ">Personal</h1>
+</div>
+
+<div class="container">
+    <div class="card text-center" style="margin-top: 5px; margin-bottom:5px">
+        <div class="card-header">
+           Experience 
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Summer Intern at Siemens PLM</h5>
+            <p class="card-text">Developed a Website for MFE department</p>
+            <p class="card-text">Technology stack used for front-end development Angular JS, HTML 5, CSS 3, Bootstrap</p>
+            <p class="card-text">The website is to facilitate the employees and freshers</p>
+            <p class="card-text">It fetches data from the excel sheets and is developed so, to make it easier to administrate for a non-technical person</p>
+        </div>
+        <div class="card-footer text-muted">
+          Jun 2019 - July 2019 Pune Maharashtra
+        </div>
+    </div>
+    <h4>Educational Details</h4>
+    <table class="table table-striped table-dark" style="margin-top: 10px; margin-bottom:10px   ">
+        <thead>
+          <tr>
+            <th scope="col">Qualification</th>
+            <th scope="col">Institute</th>
+            <th scope="col">Stream</th>
+            <th scope="col">Year of Passing</th>
+            <th scope="col">Grades</th>
+          </tr>
+        </thead>
+        <tbody>
+            <% personal.forEach(function(per){%>
+            <tr>
+                <td><%= per.qualification%></td>
+                <td><%= per.institute%></td>
+                <td><%= per.stream%></td>
+                <td><%= per.year%></td>
+                <td><%= per.grades%></td>
+            </tr>
+            <%});%>
+        </tbody>
+      </table>
+        <div class="row" style="margin-top: 10px; margin-bottom:10px;">
+            <div  class="col-sm-3">
+
+            </div>
+            <div  class="col-sm-6">
+                <ul class="list-group">
+                    <li class="list-group-item">Programming Languages: C, C++, Core Java</li>
+                    <li class="list-group-item">OpenMp</li>
+                    <li class="list-group-item">Data Structures and Algorithms</li>
+                    <li class="list-group-item">Object- Oriented Programming</li>
+                    <li class="list-group-item">Software Engineering</li>
+                    <li class="list-group-item">Operating Systems</li>
+                    <li class="list-group-item">Database Management Systems</li>
+                    <li class="list-group-item">Web Development: HTML, CSS, Node JS (Novice)</li>
+                </ul>
+            </div>
+            <div  class="col-sm-3">
+
+            </div>
+        </div>
+    
+</div>
+
+
+
+
+
+
+<%- include ('partials/footer') %>

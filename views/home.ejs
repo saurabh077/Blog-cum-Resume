@@ -1,0 +1,40 @@
+<%- include ('partials/header') %>
+
+
+<div class="container" style="margin-top: 100px; margin-bottom:50px">
+    <div class="row">
+       <div class="col-sm-6" style="box-shadow: 10px 10px 5px #aaaaaa;">
+            <img src="Tech_e.jpg" alt="image not found" style="max-height:auto; max-width:100%;">
+       </div>
+       <div class="col-sm-6" style="background:white" style="box-shadow: 10px 10px 5px #aaaaaa; display: flex;justify-content: center;
+       align-items: center;">
+          <div  style="padding:15em 1em; background-color: antiquewhite;opacity: 0.4">
+              <h3>
+              Saurabh Madhukar Zade
+              </h3>
+              <h6>
+              Third Year Computer Science and Engineering Undergraduate||Parallel Programming and Web Development Enthusiast||Summer Intern at Siemens PLM
+              </h6>
+          </div>
+       </div>
+    </div>
+
+    <div class="row" style="margin-top:50px">
+        <% allBlogs.forEach(function(blog){%>
+        <div class="col-sm-2 col-md-4" style="margin-top: 10px;">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="<%= blog.image%>" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"><%= blog.title%></h5>
+                  <p class="card-text"><%= blog.desc%></p>
+                  <a href="<%= blog.redirect%>" class="btn btn-primary">View</a>
+                </div>
+              </div>
+        </div>
+        <%});%>
+      </div>
+        
+</div>
+
+
+<%- include ('partials/footer') %>

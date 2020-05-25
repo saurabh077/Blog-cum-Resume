@@ -1,0 +1,23 @@
+<%- include ('partials/header') %>
+<div class="jumbotron" style="margin-top: 50px;">
+    <h1 style="text-align: center; ">Here are some of my thoughts</h1>
+</div>
+<div class="container">
+    <% blogs.forEach(function(blog){%>
+      <div class="card text-center" style="margin-top: 5px; margin-bottom:5px">
+          <div class="card-header"> 
+          </div>
+          <div class="card-body">
+            <h5 class="card-title"><%=blog.title%></h5>
+            <p class="card-text"><%=blog.content%></p>
+          </div>
+          <!-- <div class="card-footer text-muted">
+            
+          </div> -->
+      </div>
+    <%});%>
+  </div>
+
+
+<%- include ('partials/footer') %>
+
